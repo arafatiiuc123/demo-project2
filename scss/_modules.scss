@@ -1,0 +1,105 @@
+.wrapper{
+    //width: 1300px;
+    max-width: 96%;
+    margin: 0 auto;
+}
+
+
+/* big title intro*/
+
+.intro-text{
+	text-align: center;
+	padding: 85px 0 0 0 ;
+}
+
+.big-title{
+	font-size: 50px;
+	font-weight: 900;
+    clear: both;
+    padding: 40px 0;
+}
+
+
+.hide{
+	transition: all .3s ease-in-out;
+	display: none !important;
+	// opacity: 0;
+	// z-index: -1221;
+
+}
+
+.show{
+	display: block;
+	opacity: 1;
+}
+
+// buttons
+
+.btn{
+	outline: none;
+	border: 1px solid white;
+	border-radius: 40px;
+	background-color: $blue;
+	color: white;
+	font-weight: 900;
+	cursor: pointer;
+	@include transition(.3s);
+	&:hover{
+		background-color: white;
+		color: $dark;
+	}
+}
+
+.btn-lg{
+	padding: 15px 30px;
+}
+
+.cta{
+	letter-spacing: 1px;
+	word-spacing: 1.1px;
+}
+
+.parallax{
+	 background-position: 100% 71%;
+	 background-attachment: fixed;
+}
+
+.overlay_black:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	// display: inline-block;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.w50{
+	width: 50%;
+	overflow: hidden;
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+.text-center{
+	text-align: center;
+	& > * {
+		text-align: center;
+	}
+}
+
+section.text{
+	padding: 80px 60px;
+
+	p.description{
+		font-size: 20px;
+		line-height: 1.4;
+		width: 65%;
+		margin: 0 auto;
+	}
+}

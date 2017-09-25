@@ -1,0 +1,34 @@
+@media screen and (min-width: 600px) and (max-width: 960px) {
+	#portfolio {
+	&>div{
+		width: 50%;
+	}
+}
+}
+
+@media screen and (max-width: 599px) {
+	#portfolio {
+		&>div{
+			width: 100%;
+		}
+	}
+	section.text {
+		padding: 40px 00px;
+	}
+	section.text p.description{
+		font-size: 14px;
+	}
+	#portfolio_grid2{
+		display: none;
+	}
+}
+
+.single_post .logo a, .single_post header a.menu_toggle{
+	color: rgba(0, 0, 0,.7);
+}
+.single_post header a.menu_toggle.open span{
+	background-color: white;
+}
+.single_post header a.menu_toggle span{
+	background-color:rgba(0, 0, 0,.7);
+}
